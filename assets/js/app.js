@@ -31,7 +31,6 @@ function generateHtml(pin){
     <a class="copyPin">Copy ${pin}</a>
     <a class="pinRead">make as read</a>
     </div>
-    <button class="removeMessage bg-transparent"><img src="./assets/images/trash.png" alt="trash"></button>
 </div>`;
 }
 
@@ -66,14 +65,6 @@ select.makePin.addEventListener('click', ()=>{
     read.addEventListener('click', ()=>{
       pinMessage.classList.add('pin-read');
       console.log(select.messageList.makeAsRead);
-    });
-  }
-
-  // Remove the Message
-  const msg = document.getElementsByClassName('removeMessage');
-  for (const remove of msg) {
-    remove.addEventListener('click', function(){
-      select.messageBody.removeChild(remove.parentNode.parentNode);
     });
   }
 });
