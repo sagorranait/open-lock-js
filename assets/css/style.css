@@ -59,6 +59,24 @@
   overflow-y: scroll;
 }
 
+#lockerMain .pin-body h2 {
+  font-size: 14px;
+  line-height: 175.78%;
+  color: #5c5c5c91;
+  text-align: center;
+  opacity: 0.6;
+  margin: 0;
+  padding: 49px 0;
+}
+
+#lockerMain .pin-body h2 span img {
+  width: 25px;
+}
+
+#lockerMain .pin-body h2 span p {
+  font-size: 12px;
+}
+
 #lockerMain .pin-body::-webkit-scrollbar {
   background-color: #fff;
   width: 16px;
@@ -180,3 +198,34 @@
 /* Lock Screen CSS End */
 
 /* Main CSS End */
+
+
+/* Footer CSS Start */
+#lockerFooter {
+  padding: 22px 0;
+  background: #212121;
+}
+
+.footer-logo h2 {
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.footer-logo h2 span {
+  color: #FFC000;
+}
+
+.footer-text p {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.footer-text p a {
+  color: #FFC000;
+  text-decoration: none;
+}
+
+/* Footer CSS End */
