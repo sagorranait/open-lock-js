@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item ms-3">
-              <button class="nav-link cart-total">Get Started</button>
+              <button class="nav-link locker-btn">Get Started</button>
             </li>
           </ul>
         </div>
@@ -34,41 +34,12 @@
   <main id="lockerMain">
     <div class="container">
       <section class="generate-pin mx-auto">
-        <div class="pin-header">
-          <button class="cart-total">Generate Pin</button>
+        <div class="pin-header d-flex align-items-center justify-content-between">
+          <h3 class="ps-3">Messages (<span id="countMessage">0</span>)</h3>
+          <button id="makePin" class="locker-btn">Generate Pin</button>
         </div>
-        <div class="pin-body">
-          <!-- <div class="pin-message">
-            <div class="message d-flex align-items-center justify-content-around">
-              <img src="./assets/images/message.png" alt="message">
-              <div class="copy-message">
-                <p>Use 475153 for two-factor authentication to unlock The Door.</p>
-                <a>Copy 475153</a>
-              </div>
-              <button id="remove" class="bg-transparent"><img src="./assets/images/trash.png" alt="trash"></button>
-            </div>
-          </div>
-          <div class="pin-message">
-            <div class="message d-flex align-items-center justify-content-around">
-              <img src="./assets/images/message.png" alt="message">
-              <div class="copy-message">
-                <p>Use 475153 for two-factor authentication to unlock The Door.</p>
-                <a>Copy 475153</a>
-              </div>
-              <button id="remove" class="bg-transparent"><img src="./assets/images/trash.png" alt="trash"></button>
-            </div>
-          </div>
-          <div class="pin-message">
-            <div class="message d-flex align-items-center justify-content-around">
-              <img src="./assets/images/message.png" alt="message">
-              <div class="copy-message">
-                <p>Use 475153 for two-factor authentication to unlock The Door.</p>
-                <a>Copy 475153</a>
-              </div>
-              <button id="remove" class="bg-transparent"><img src="./assets/images/trash.png" alt="trash"></button>
-            </div>
-          </div> -->
-          <h2>
+        <div id="messageBody" class="pin-body">
+          <h2 id="noMessage">
             <span>
               <img src="./assets/images/empty-message.png" alt="empty-message">
             </span>
@@ -84,7 +55,7 @@
               <div class="pin-input">
                 <input type="number" id="pinInput">
               </div>
-              <div class="pin-buttons">
+              <div id="pinButton" class="pin-buttons">
                 <div class="button d-flex align-items-center justify-content-center gap-4">
                   <span>7</span>
                   <span>8</span>
@@ -103,14 +74,14 @@
                 <div class="button d-flex align-items-center justify-content-center gap-4">
                   <span>⬅</span>
                   <span>C</span>
-                  <span>OK</span>
+                  <span id="makeMatch">OK</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-xl-6">
             <div class="lock-image d-flex align-items-center justify-content-center">
-              <img src="./assets/images/lock.png" alt="unlock">
+              <img id="lockImage" src="./assets/images/lock.png" alt="unlock">
             </div>
           </div>
         </div>

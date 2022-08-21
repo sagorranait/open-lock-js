@@ -4,6 +4,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
+.copied {
+  background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+  color: #FFFFFF !important;
+}
+
 /* Basic CSS End */
 
 /* Header CSS Start */
@@ -18,8 +27,8 @@
   text-transform: uppercase;
 }
 
-#lockerHead .cart-total,
-.cart-total {
+#lockerHead .locker-btn,
+.locker-btn {
   padding: 12px 25px;
   background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
@@ -48,14 +57,20 @@
 }
 
 .pin-header {
-  text-align: right;
   padding: 10px;
   border-bottom: 1px solid #E5E5E5;
 }
 
+.pin-header h3 {
+  font-size: 18px;
+  line-height: 175.78%;
+  color: #5C5C5C;
+  margin: 0;
+}
+
 #lockerMain .pin-body {
-  padding: 30px 30px 0;
-  max-height: 300px;
+  padding: 15px 30px 0;
+  height: 200px;
   overflow-y: scroll;
 }
 
@@ -99,22 +114,26 @@
   display: none;
 }
 
-#lockerMain .pin-message {
-  padding: 0 0 30px;
-  margin-bottom: 30px;
+#lockerMain .pin-body .pin-message {
+  padding: 15px 0 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #E5E5E5;
 }
 
-#lockerMain .pin-message:last-child {
+#lockerMain .pin-read {
+  background: #f5f5f57a;
+}
+
+#lockerMain .pin-body .pin-message:last-child {
   margin-bottom: 0px;
   border-bottom: 0px;
 }
 
-#lockerMain .message img {
+#lockerMain .pin-body .message img {
   width: 25px;
 }
 
-#lockerMain .copy-message p {
+#lockerMain .pin-body .copy-message p {
   font-size: 15px;
   line-height: 175.78%;
   color: #5C5C5C;
@@ -125,11 +144,16 @@
   border: none;
 }
 
-.copy-message {
+#makeMatch {
+  background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+  color: #FFFFFF !important;
+}
+
+#lockerMain .pin-body .copy-message {
   margin: 0px 0px 0px 0px;
 }
 
-.copy-message a {
+#lockerMain .pin-body .copy-message a {
   font-size: 12px;
   line-height: 175.78%;
   color: #5C5C5C;
@@ -139,11 +163,12 @@
   border-radius: 50px;
   cursor: pointer;
   margin-top: 5px;
+  text-decoration: none;
 }
 
 /* Lock Screen CSS Start */
 #lockerMain .lock-screen {
-  margin: 60px 0 0;
+  margin: 54px 0 0;
 }
 
 #lockerMain .enter-pin,
@@ -187,7 +212,6 @@
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  background: #FFFFFF;
   box-shadow: 2px 1px 7px rgb(160 121 0 / 20%);
 }
 
